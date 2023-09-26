@@ -1,0 +1,58 @@
+SD1-15@1sd15 MINGW64 ~/git_project (main)
+$ cd ..
+
+SD1-15@1sd15 MINGW64 ~
+$ mkdir test2
+
+
+SD1-15@1sd15 MINGW64 ~
+$ cd test2
+
+SD1-15@1sd15 MINGW64 ~/test2
+$ git init
+Initialized empty Git repository in C:/Users/SD1-15/test2/.git/
+
+SD1-15@1sd15 MINGW64 ~/test2 (master)
+$ cat >> abc.txt
+aaa
+bbb
+ccc
+
+SD1-15@1sd15 MINGW64 ~/test2 (master)
+$ git add .
+
+SD1-15@1sd15 MINGW64 ~/test2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+
+SD1-15@1sd15 MINGW64 ~/test2 (master)
+$ git commit -m "first commit"
+[master (root-commit) 8118831] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 abc.txt
+
+SD1-15@1sd15 MINGW64 ~/test2 (master)
+$ git branch -M main
+
+SD1-15@1sd15 MINGW64 ~/test2 (main)
+$ git remote add origin https://github.com/ska9611/Test-2.git
+
+
+SD1-15@1sd15 MINGW64 ~/test2 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 223 bytes | 223.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ska9611/Test-2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+
